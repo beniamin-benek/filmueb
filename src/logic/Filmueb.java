@@ -1,7 +1,6 @@
-package startup;
+package logic;
 
 import model.Actor;
-import model.ConsoleDataReader;
 import model.Movie;
 import model.Series;
 

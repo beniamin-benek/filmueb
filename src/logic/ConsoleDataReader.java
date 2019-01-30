@@ -1,4 +1,8 @@
-package model;
+package logic;
+
+import model.Actor;
+import model.Movie;
+import model.Series;
 
 import java.util.Scanner;
 
