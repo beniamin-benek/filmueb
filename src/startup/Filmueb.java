@@ -14,12 +14,12 @@ public class Filmueb {
         ConsoleDataReader consoleDataReader = new ConsoleDataReader();
 
         Movie theRoom = consoleDataReader.createMovie();
-        //Series myLittlePony = consoleDataReader.createTvSeries();
+        Series myLittlePony = consoleDataReader.createTvSeries();
         Actor edwardNorton = consoleDataReader.createActor();
 
-        //theRoom.printInfo();
-        //myLittlePony.printInfo();
-        //edwardNorton.printInfo();
+        theRoom.printInfo();
+        myLittlePony.printInfo();
+        edwardNorton.printInfo();
 
     }
 }
