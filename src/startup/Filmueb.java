@@ -1,6 +1,7 @@
 package startup;
 
 import model.Actor;
+import model.ConsoleDataReader;
 import model.Movie;
 import model.Series;
 
@@ -8,16 +9,17 @@ public class Filmueb {
 
     public static void main(String[] args) {
 
-        String version = "0.1";
+        String version = "0.2";
         System.out.println("Wersja " + version +"\n");
+        ConsoleDataReader consoleDataReader = new ConsoleDataReader();
 
-        Movie theRoom = new Movie("The Room", "Tommy Wiseau", 2003, "melodramat", "Życie poczciwego bankiera zostaje wywrócone do góry nogami w momencie, gdy jego narzeczona zaczyna się spotykać z ich najlepszym przyjacielem.", 1);
-        Series myLittlePony = new Series("My Little Pony: Przyjaźń to Magia", 9,26,"Hasbro","animacja", "Jednorożec Twilight Sparkle przybywa do Ponyville, by poznać magię i znaczenie przyjaźni.", 4);
-        Actor edwardNorton = new Actor("Edward","Norton","USA");
+        Movie theRoom = consoleDataReader.createMovie();
+        //Series myLittlePony = consoleDataReader.createTvSeries();
+        Actor edwardNorton = consoleDataReader.createActor();
 
-        theRoom.printInfo();
-        myLittlePony.printInfo();
-        edwardNorton.printInfo();
+        //theRoom.printInfo();
+        //myLittlePony.printInfo();
+        //edwardNorton.printInfo();
 
     }
 }
