@@ -7,20 +7,20 @@ public class Movie {
     private int movieProductionYear;
     private String movieGenre;
     private String movieDescription;
-    private double moviePrice;
+    private int movieRating;
 
-    public Movie(String movieTitle, String movieDirector, int movieProductionYear, String movieGenre, String movieDescription, double moviePrice) {
+    public Movie(String movieTitle, String movieDirector, int movieProductionYear, String movieGenre, String movieDescription, int movieRating) {
         this.movieTitle = movieTitle;
         this.movieDirector = movieDirector;
         this.movieProductionYear = movieProductionYear;
         this.movieGenre = movieGenre;
         this.movieDescription = movieDescription;
-        this.moviePrice = moviePrice;
+        this.movieRating = movieRating;
     }
 
     public void printInfo() {
-        System.out.printf("Film:\n- Tytuł: %s\n- Reżyser: %s\n- Rok produkcji: %d\n- Gatunek: %s\n- Opis: %s\n- Cena: %.2f zł\n\n",
-                getMovieTitle(),getMovieDirector(),getMovieProductionYear(),getMovieGenre(),getMovieDescription(),getMoviePrice());
+        System.out.printf("Film:\n- Tytuł: %s\n- Reżyser: %s\n- Rok produkcji: %d\n- Gatunek: %s\n- Opis: %s\n- Ocena: %d\n\n",
+                getMovieTitle(),getMovieDirector(),getMovieProductionYear(),getMovieGenre(),getMovieDescription(),getMovieRating());
     }
 
     public String getMovieTitle() {
@@ -63,12 +63,12 @@ public class Movie {
         this.movieDescription = movieDescription;
     }
 
-    public double getMoviePrice() {
-        return moviePrice;
+    public int getMovieRating() {
+        return movieRating;
     }
 
-    public void setMoviePrice(double moviePrice) {
-        this.moviePrice = moviePrice;
+    public void setMovieRating(int movieRating) {
+        this.movieRating = movieRating;
     }
 
 }

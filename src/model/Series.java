@@ -8,21 +8,21 @@ public class Series {
     private String seriesProducer;
     private String seriesGenre;
     private String seriesDescription;
-    private double seriesPrice;
+    private int seriesRating;
 
-    public Series(String seriesTitle, int numberOfSeasons, int numberOfEpisodes, String seriesProducer, String seriesGenre, String seriesDescription, double seriesPrice) {
+    public Series(String seriesTitle, int numberOfSeasons, int numberOfEpisodes, String seriesProducer, String seriesGenre, String seriesDescription, int seriesRating) {
         this.seriesTitle = seriesTitle;
         this.numberOfSeasons = numberOfSeasons;
         this.numberOfEpisodes = numberOfEpisodes;
         this.seriesProducer = seriesProducer;
         this.seriesGenre = seriesGenre;
         this.seriesDescription = seriesDescription;
-        this.seriesPrice = seriesPrice;
+        this.seriesRating = seriesRating;
     }
 
     public void printInfo() {
-        System.out.printf("Serial:\n- Tytuł: %s\n- Liczba sezonów: %d\n- Liczba odcinków: %d\n- Producent: %s\n- Gatunek: %s\n- Opis: %s\n- Cena: %.2f zł\n\n",
-                getSeriesTitle(),getNumberOfSeasons(),getNumberOfEpisodes(),getSeriesProducer(),getSeriesGenre(),getSeriesDescription(),getSeriesPrice());
+        System.out.printf("Serial:\n- Tytuł: %s\n- Liczba sezonów: %d\n- Liczba odcinków: %d\n- Producent: %s\n- Gatunek: %s\n- Opis: %s\n- Ocena: %d\n\n",
+                getSeriesTitle(),getNumberOfSeasons(),getNumberOfEpisodes(),getSeriesProducer(),getSeriesGenre(),getSeriesDescription(),getSeriesRating());
     }
 
     public String getSeriesTitle() {
@@ -73,11 +73,11 @@ public class Series {
         this.seriesDescription = seriesDescription;
     }
 
-    public double getSeriesPrice() {
-        return seriesPrice;
+    public int getSeriesRating() {
+        return seriesRating;
     }
 
-    public void setSeriesPrice(double seriesPrice) {
-        this.seriesPrice = seriesPrice;
+    public void setSeriesRating(int seriesRating) {
+        this.seriesRating = seriesRating;
     }
 }
